@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW3 Fonts</title>
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <h1>Home work #3</h1>
+            <form>
+                <fieldset>
+                    <legend>Укажите ваши данные</legend>
+                    <p>
+                        <label for="name">Ваше имя:</label>
+                        <input id="name" type="text" placeholder="Введите своё имя" required>
+                    </p>
+                    <p>
+                        <label for="surname">Ваша фамилия:</label>
+                        <input id="surname" type="text" placeholder="Введите свою фамилию" required>
+                    </p>
+                    <p>
+                        <label for="mail">Электронная почта:</label>
+                        <input id="mail" type="email" placeholder="Введите свою почту" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Данные про ваш курс</legend>
+                    <p>
+                        <label for="course">Выберите ваш курс:</label>
+                        <select id="course" required>
+                            <option disabled selected value>Выберите из списка</option>
+                            <option value="Front-End Basic">Front-End Basic</option>
+                            <option value="Front-End Pro">Front-End Pro</option>
+                        </select>
+                    </p>
+                    <p>
+                        Выполняете ли вы домашние задания:
+                        <br>
+                        <label>
+                            <input type="radio" name="homework" value="yes">
+                            <span>Да, выполняю</span>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="homework" value="no">
+                            <span>Нет, не выполняю</span>
+                        </label>
+                    </p>
+                    <p>
+                        Дополнительная информация
+                        <label>
+                            <br>
+                            <input type="checkbox" value="continue study">
+                            <span>Буду продолжать обучение</span>
+                        </label>
+                        <label>
+                            <br>
+                            <input type="checkbox" value="study english">
+                            <span>Дополнительно занимаюсь английским</span>
+                        </label>
+                    </p>
+                </fieldset>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
